@@ -1,3 +1,0 @@
-#!/bin/sh
-mv bin/ $HOME/
-chmod +x $HOME/bin/*
