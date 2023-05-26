@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+
+wallDir="$HOME/.wallpapers"
+
+wal -i $wallDir/$1;
+rm ~/.Xresources
+cp ~/.cache/wal/colors.Xresources ~/.Xresources
+feh --no-fehbg --bg-fill $wallDir/$1
+
+printf "Xft.autohint:1\nXft.antialias:1\nXft.hinting:true\nXft.hintstyle:hintslight\nXft.rgba:rgb\nXft.lcdfilter:lcddefault" >> ~/.Xresources

@@ -1,0 +1,5 @@
+#!/bin/sh
+mv etc/*.conf /etc/
+mv etc/modprobe.d/*.conf /etc/modprobe.d/
+mv etc/sysctl.d/*.conf /etc/sysctl.d/
+mv etc/systemd/*.conf /etc/systemd/

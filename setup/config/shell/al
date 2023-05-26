@@ -1,0 +1,31 @@
+alias v="vis"
+alias nv="nvim"
+alias dv="sudo vis"
+alias dnv="sudo nvim"
+
+alias cp="cp -v"
+alias mv="mv -v"
+alias mkd="mkdir -pv"
+alias dcp="sudo cp -v"
+alias dmv="sudo mv -v"
+alias dmkd="sudo mkdir -pv"
+alias chx="chmod +x"
+
+alias ls="ls --color --group-directories-first"  # all files and dirs
+alias la="ls -al --color --group-directories-first" # my preferred listing
+alias ll="ls -l --color --group-directories-first -ahl"  # long format
+
+alias ea="nvim ~/.config/shell/al"
+alias ef="nvim ~/.config/fish/config.fish"
+alias ez="nvim ~/.config/zsh/.zshrc"
+alias ex="nvim ~/.config/sxhkd/sxhkdrc"
+alias ep="nvim ~/.config/shell/profile"
+alias eh="nvim ~/.config/hypr/hyprland.conf"
+
+alias frc="source ~/.config/fish/config.fish"
+alias zrc="source ~/.config/zsh/.zshrc"
+alias resx="pkill -USR1 -x"
+alias rm="trash-put"
+
+alias sys="systemctl"
+alias dsys="sudo systemctl"

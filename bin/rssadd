@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+newsDir="$HOME/.newsboat"
+echo "$1" >> $newsDir/urls

@@ -1,0 +1,1 @@
+rw intel_pstate=disable intel_iommu=igfx_off rootfstype=ext4 mitigations=off nowatchdog nmi_watchdog=0 vt.global_cursor_default=0 intel_idle.max_cstate=1 cryptomgr.notests initcall_debug no_timer_check noreplace-smp page_alloc.shuffle=1 rcupdate.rcu_expedited=1 tsc=reliable msr.allow_writes=on pcie_aspm=force module.sig_unenforce

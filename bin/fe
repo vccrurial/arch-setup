@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# read system info
+read -r host < /proc/sys/kernel/hostname
+read -r kernel < /proc/sys/kernel/osrelease
+. /etc/os-release
+mem=$(free --mega | awk 'NR == 2 { print $3" / "$2" MB" }')
+pkgs=$(xbps-query -l | wc -l)
+mpkgs=$(xbps-query -m | wc -l)
+
+# get wm from xinitrc
+while read -r line; do
+    [ "${line#exec }" = "$line" ] || wm="${line#exec }"
+done < "$HOME/.xinitrc"
+
+# colors
+if [ -x "$(command -v tput)" ]; then
+    bold="$(tput bold)"
+    accent="$(tput setaf 1)"
+    reset="$(tput sgr0)"
+fi
+
+lc="${reset}${bold}${accent}"    # labels
+nc="${reset}${bold}${accent}"    # user and hostname
+ic="${reset}"                    # info
+
+cat <<EOF
+
+${nc}${USER}@${host}
+${lc}os: ${ic}${PRETTY_NAME}
+${lc}kernel: ${ic}${kernel}
+${lc}pkgs: ${ic}${mpkgs} (manual) ${pkgs} (total)
+${lc}shell: ${ic}${SHELL}
+${lc}wm: ${ic}${wm}
+${lc}mem: ${ic}${mem}
+
+EOF

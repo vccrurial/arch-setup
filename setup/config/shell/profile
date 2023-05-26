@@ -1,0 +1,25 @@
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_RUNTIME_DIR="/run/user/1000"
+
+export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
+export VIS_PATH="$XDG_CONFIG_HOME/vis/"
+export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
+export LESSHISTFILE="-"
+export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export PARU_CONF="$XDG_CONFIG_HOME"/pacman/paru.conf
+
+export EDITOR="nvim"
+export BROWSER="firefox"
+export TERMINAL="foot"
+export VISUAL="$EDITOR"
+export PAGER="bat -p"
+export LIBSEAT_BACKEND="logind"
+
+export BIN="$HOME/bin"
+export THIRD_PARTY_BIN="$HOME/.local/bin"
+export PATH="$PATH:$APPIMAGES:$BIN:$THIRD_PARTY_BIN"
