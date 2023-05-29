@@ -128,3 +128,4 @@ ungoogled-chromium-bin
 wlsunset
 pacfinder
 hyprpicker-git
+apparmor.d-git
