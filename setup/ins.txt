@@ -40,6 +40,7 @@ vulkan-intel
 thermald
 
 # utilities
+apparmor
 ydotool
 mosh
 linux-zen
