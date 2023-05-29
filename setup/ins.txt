@@ -40,6 +40,7 @@ vulkan-intel
 thermald
 
 # utilities
+networkmanager
 reflector
 apparmor
 ydotool
