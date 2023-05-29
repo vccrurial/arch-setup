@@ -7,3 +7,4 @@ systemctl enable thermald.service
 systemctl enable fstrim.timer
 systemctl enable pkgfile-update.timer
 systemctl enable apparmor.service
+systemcrl enable reflector.timer
