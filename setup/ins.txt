@@ -80,8 +80,8 @@ rebuild-detector
 brightnessctl
 qt5-wayland
 qt6-wayland
-hyprland
 xdg-desktop-portal-hyprland
+hyprland
 polkit-gnome
 qt5ct
 grim
