@@ -9,7 +9,6 @@ export VIS_PATH="$XDG_CONFIG_HOME/vis/"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
 export LESSHISTFILE="-"
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export PARU_CONF="$XDG_CONFIG_HOME"/pacman/paru.conf
 
