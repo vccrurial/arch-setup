@@ -8,4 +8,4 @@ systemctl enable fstrim.timer
 systemctl enable pkgfile-update.timer
 systemctl enable apparmor.service
 systemctl enable reflector.timer
-systemctl enable emacs.service
+systemctl enable --user emacs.service
