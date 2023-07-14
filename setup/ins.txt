@@ -43,7 +43,9 @@ reflector
 apparmor
 ydotool
 mosh
-linux-zen
+linux-hardened
+linux-headers
+linux-hardened-headers
 linux-firmware
 base
 base-devel
