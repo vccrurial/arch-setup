@@ -27,6 +27,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 nerd-fonts-meta
+terminus-font
 
 # drivers setup
 intel-media-driver
